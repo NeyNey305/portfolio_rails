@@ -1,4 +1,8 @@
 
+
+// @-ms-viewport{
+//   width: device-width;
+// }
 /////////////////////////////// ACCORDION MENU////////////////////////////
 button.accordion {
     background-color: black;
@@ -33,9 +37,11 @@ div.panel {
 
 div.panel.show {
     opacity: 1;
-    max-height: 1000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+    max-height: 1050px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
     padding-top: 4em;
     padding-bottom: 4em;
+    margin: 0;
+
 }
 
 .accordion:hover {
@@ -59,6 +65,7 @@ div.panel.show {
   background-size: 100% ;
   min-height: 480px;
   // margin-bottom: -100px;
+  max-width: 100%;
   width: auto;
 }
 
@@ -73,56 +80,56 @@ div.panel.show {
 }
 
 .devicon-html5-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #F14A29;
 }
 
 .devicon-css3-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #47a3da;
 }
 
 .devicon-javascript-plain {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #f0db4f;
 }
 
 .devicon-ruby-plain-wordmark {
-font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #d91404;
 }
 
 .devicon-jquery-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #0769ad;
 }
 
 .devicon-rails-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #a62c46;
 }
 
 .devicon-git-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #f34f29;
 }
 
 .devicon-python-plain-wordmark {
-  font-size: 3em;
+  font-size: 3.5em;
   display: inline-block;
   letter-spacing: 1em;
   color: #ffd845;
@@ -147,6 +154,7 @@ font-size: 3em;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -20px;
 
 }
 
@@ -160,6 +168,7 @@ font-size: 3em;
     margin-left: 50px;
     margin-right: 20px;
     opacity: 0.2;
+    background: radial-gradient(circle at 100px 100px, #3e7fe8, #000);
   }
 
   .me2:hover {
@@ -174,6 +183,7 @@ font-size: 3em;
   color: black;
   font-size: 30px;
   float: left;
+  padding-left: 1em;
   position: relative;
 }
 
@@ -187,6 +197,7 @@ font-size: 3em;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.2;
+  background: radial-gradient(circle at 100px 100px, #47e83e, #000);
 }
 
 .codecult:hover {
@@ -214,6 +225,7 @@ font-size: 3em;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.2;
+  background: radial-gradient(circle at 100px 100px, #e8663e, #000);
 }
 
 .develdev:hover {
@@ -242,6 +254,8 @@ font-size: 3em;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.2;
+  background: radial-gradient(circle at 100px 100px, #ead74b, #000);
+
 }
 
 .hollyhood:hover {
@@ -251,10 +265,10 @@ font-size: 3em;
 #hollyhood {
   text-decoration: none;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 2.5em;
   font-family: 'Pacifico', cursive;
   color: black;
-  font-size: 25px;
+  font-size: 23px;
   float: left;
   position: relative;
 
@@ -270,6 +284,8 @@ font-size: 3em;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.2;
+  background: radial-gradient(circle at 100px 100px, #e552e3, #000);
+
 }
 
 .juliemansfield:hover {
@@ -279,7 +295,7 @@ font-size: 3em;
 #juliemansfield {
   text-decoration: none;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 1.5em;
   font-family: 'Pacifico', cursive;
   color: black;
   font-size: 25px;
@@ -297,6 +313,8 @@ font-size: 3em;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0.2;
+  background: radial-gradient(circle at 100px 100px, #a76bea, #000);
+
 }
 
 .fabienneb:hover {
@@ -306,11 +324,12 @@ font-size: 3em;
 #fabienneb {
   text-decoration: none;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 2.2em;
   font-family: 'Pacifico', cursive;
   color: black;
   font-size: 25px;
   float: left;
+  padding-left: 0.5em;
   position: relative;
 }
 
@@ -337,7 +356,7 @@ font-size: 3em;
 }
 
 #bioedit {
-  // border-radius: 50%;
+  border-radius: 50%;
   width: auto;
   height: 350px;
   float: right;
@@ -370,6 +389,7 @@ font-size: 3em;
 
 #hireme {
   background-color: #ed8925;
+  width: 20em;
 }
 
 .contacticons {
@@ -418,7 +438,7 @@ font-size: 3em;
   opacity: 0.2;
 }
 
-.fa-linkedin {
+.fa-linkedin:hover {
   opacity: 1;
 }
 
@@ -427,6 +447,6 @@ font-size: 3em;
   opacity: 0.2;
 }
 
-.fa-twitter {
+.fa-twitter:hover {
   opacity: 1;
 }
