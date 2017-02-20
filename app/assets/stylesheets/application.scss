@@ -1,8 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-
-// @-ms-viewport{
-//   width: device-width;
-// }
 
 .fa-heart {
   color: #ca80f2;
@@ -10,33 +8,40 @@
 /////////////////////////////// ACCORDION MENU////////////////////////////
 button.accordion {
     background-color: black;
-    color: #234f34;
+    color: #1a682c;
     cursor: pointer;
-    padding: 25px;
+    font-size: 40px;
+    padding: 30px;
     width: 100%;
     height: auto;
     text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
+    margin: 0;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 3em;
-    margin-top: -25px;
-    margin-bottom: -10px;
-
 }
 
-button.accordion.active, button.accordion:hover {
-    // background-color: gray;
+button.accordion.active {
+  background-color: black;
+  color: #dbc81e;
+}
+
+button.accordion:hover {
+  background-color: black;
+  color: white;
 }
 
 div.panel {
-    padding: 0 18px;
+    padding: 0;
     background-color: black;
-    max-height: 0;
+    display: none;
+    margin: 0;
+    border-radius: 0;
     overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
+    transition: 0.6 ease;
+    transition-timing-function: ease;
+    // opacity: 0;
 }
 
 div.panel.show {
@@ -45,331 +50,177 @@ div.panel.show {
     padding-top: 4em;
     padding-bottom: 4em;
     margin: 0;
-
-}
-
-.accordion:hover {
-  color: gray;
 }
 
 
 ////////////////////////////// BACKGROUND PIC & NAME (JUMBOTRON)/////////////////////////////
-#name {
-  color: white;
+
+#first-name {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 6em;
-  // padding-top: 0.5em;
-  // text-align: center;
+  color: white;
+  // font-size: 90px;
+  letter-spacing: 2em;
+  text-align: center;
 }
 
+
 .jumbotron {
-  background-image: url('https://s30.postimg.org/hzr85i7kx/jeneew_bgpic.jpg');
+  background-image: url('jenee.jpg');
+  background-size: 100%;
   background-repeat: no-repeat;
+  height: 600px;
+  margin: 0;
   background-attachment: fixed;
-  background-size: 100% ;
-  min-height: 480px;
-  // margin-bottom: -100px;
-  max-width: 100%;
-  width: auto;
+}
+
+.skinny-border {
+  background-color: white;
+  height: 0.3em;
 }
 
 
 /////////////////////////////////// LANGUAGE ICONS ////////////////////////////////////////
-.langlogos {
-  display: inline-block;
+#devicons {
+  list-style: none;
+  display: inline-flex;
+  letter-spacing: 2.5em;
   text-align: center;
-  padding-left: 28em;
-  // padding-top: 1.5em;
-  // padding-bottom: 1em;
+  margin-left: -25px;
+}
+
+.forever {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+  padding-top: 1.8em;
+  text-align: center;
 }
 
 .devicon-html5-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #F14A29;
 }
 
 .devicon-css3-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #47a3da;
 }
 
 .devicon-javascript-plain {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #f0db4f;
 }
 
 .devicon-ruby-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #d91404;
 }
 
 .devicon-jquery-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #0769ad;
 }
 
 .devicon-rails-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #a62c46;
 }
 
 .devicon-git-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #f34f29;
 }
 
 .devicon-python-plain-wordmark {
   font-size: 3.5em;
-  display: inline-block;
-  letter-spacing: 1em;
   color: #ffd845;
 }
 
-.devicons {
-  text-align: center;
-  // padding-top: 4em;
-  // padding-bottom: 4em;
-  padding-left: 4em;
+.devicon-php-plain {
+  font-size: 3.5em;
+  color: #47a3da;
 }
 
-.forever {
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  font-size: 30px;
-  padding-top: 1em;
-}
 
 //////////////////////////////// RECENT PROJECTS ///////////////////////////////////////
-.projectdiv {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20px;
-
-}
-
 .me2 {
-    background-color:  #3e7fe8;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    position: relative;
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 20px;
-    opacity: 0.2;
-    background: radial-gradient(circle at 100px 100px, #3e7fe8, #000);
-  }
-
-  .me2:hover {
-    opacity: 1;
-  }
-
-#me2 {
-  text-decoration: none;
-  text-align: center;
-  padding-top: 2em;
-  font-family: 'Pacifico', cursive;
-  color: black;
+  font-family: 'Kaushan Script', cursive;
   font-size: 30px;
-  float: left;
-  padding-left: 1em;
-  position: relative;
+  color: #cc3bce;
 }
 
-.codecult {
-  background-color: #47e83e;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.2;
-  background: radial-gradient(circle at 100px 100px, #47e83e, #000);
-}
-
-.codecult:hover {
-  opacity: 1;
-}
-
-#codecult {
+.me2:hover {
   text-decoration: none;
-  text-align: center;
-  padding-top: 2em;
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 30px;
-  float: left;
-  position: relative;
+  color: #cc3bce;
+  -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px #70a808;
+}
+
+
+.crc {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: #a7c6aa;
+}
+
+.crc:hover {
+  text-decoration: none;
+  color: #a7c6aa;
+  -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px #70a808;
 }
 
 .develdev {
-  background-color: #e8663e;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.2;
-  background: radial-gradient(circle at 100px 100px, #e8663e, #000);
+  color: #8e1904;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
 }
 
 .develdev:hover {
-  opacity: 1;
-}
-
-#develdev {
   text-decoration: none;
-  text-align: center;
-  padding-top: 2em;
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 30px;
-  float: left;
-  position: relative;
-
+  color: #8e1904;
+  -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px #70a808;
 }
 
-.hollyhood {
-  background-color: #ead74b;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.2;
-  background: radial-gradient(circle at 100px 100px, #ead74b, #000);
-
-}
-
-.hollyhood:hover {
-  opacity: 1;
-}
-
-#hollyhood {
-  text-decoration: none;
-  text-align: center;
-  padding-top: 2.5em;
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 23px;
-  float: left;
-  position: relative;
-
-}
-
-.juliemansfield {
-  background-color: #e552e3;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.2;
-  background: radial-gradient(circle at 100px 100px, #e552e3, #000);
-
-}
-
-.juliemansfield:hover {
-  opacity: 1;
-}
-
-#juliemansfield {
-  text-decoration: none;
+#project-align {
   text-align: center;
   padding-top: 1.5em;
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 25px;
-  float: left;
-  position: relative;
+  padding-bottom: 1.5em;
 }
 
-.fabienneb {
-  background-color: #a76bea;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 0.2;
-  background: radial-gradient(circle at 100px 100px, #a76bea, #000);
-
+#spindiv {
+  opacity: 0.5;
 }
 
-.fabienneb:hover {
+#spindiv:hover {
+  // transform: rotateY(180deg);
   opacity: 1;
-}
 
-#fabienneb {
-  text-decoration: none;
-  text-align: center;
-  padding-top: 2.2em;
-  font-family: 'Pacifico', cursive;
-  color: black;
-  font-size: 25px;
-  float: left;
-  padding-left: 0.5em;
-  position: relative;
 }
-
 //////////////////////////////////// BIO ///////////////////////////////////////////
-.biotext {
-  text-align: justify;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
+.bio-pic {
+  width: 100%;
+  height: auto;
+  // padding-left: 7em;
+  padding-top: 1.5em;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.bio-text {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5em;
   color: #333;
-  padding-left: 5em;
-  padding-right: 20em;
   padding-top: 2em;
-  float: left;
-  padding-bottom: 3em;
-  position: relative;
-  // width: 500px;
-}
+  // padding-right:7em;
 
-.biopic {
-
-  float: right;
-  position: relative;
-
-}
-
-#bioedit {
-  border-radius: 50%;
-  width: auto;
-  height: 350px;
-  float: right;
-  margin-top: -400px;
-  margin-right: 8em;
-  border-style: outset;
-  -moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
 }
 
 ////////////////////////////////// CONTACT /////////////////////////////////////////////
@@ -454,3 +305,39 @@ div.panel.show {
 .fa-twitter:hover {
   opacity: 1;
 }
+
+////////////////////////////// FOOTER /////////////////////////////////
+
+footer {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+
+}
+
+
+/* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }

@@ -1,102 +1,99 @@
-<!-- <nav class="navbar navbar-default">
-<div class="container-fluid">
-<div class="navbar-header">
-<a class="navbar-brand" href="#">
-<!-- <img alt="Brand" src="images/jeneetaylor.png"> -->
-<!-- </a>
-</div>
-</div>
-</nav> -->
-
 
 <div class="jumbotron">
   <div class="container">
-    <h1 id="name">JENÈE TAYLOR</h1>
+    <div class="row">
+      <div class="col-md-12" id="first-name">
+        <h1 id="name">JENEE TAYLOR</h1>
+      </div>
+    </div>
   </div>
-
 </div>
 
+<div class="skinny-border">
+</div>
 
-
-<button class="accordion">FULL STACK WEB DEVELOPER</button>
-
+<button class="accordion">Full Stack Web Developer</button>
 <div class="panel">
-  <div class="devicons">
+  <div class="container">
 
-    <i class="devicon-html5-plain-wordmark"></i><i class="devicon-css3-plain-wordmark"></i><i class="devicon-javascript-plain"></i>
-    <i class="devicon-ruby-plain-wordmark"></i><i class="devicon-jquery-plain-wordmark"></i><i class="devicon-rails-plain-wordmark"></i>
-    <i class="devicon-git-plain-wordmark"></i><i class="devicon-python-plain-wordmark"></i>
-  </div>
-  <p  class='forever'>
-    Forever Expanding
-  </p>
-</div>
-
-<button class="accordion">RECENT PROJECTS</button>
-<div class="panel">
-  <div class="projectdiv">
-
-    <div class="me2">
-      <a target="_blank" href="http://www.myme2.co/" id="me2">#Me2</a>
-    </div>
-    <div class="codecult">
-      <a target="_blank" href="https://github.com/cronwel/codenculture" id="codecult">Code//Cult</a>
-    </div>
-
-    <div class="fabienneb">
-      <a target="_blank" href="#" id="fabienneb">Fabienne B.</a>
-    </div>
-
-    <div class="develdev">
-      <a target="_blank" href"#" id="develdev">DevelDev</a>
-    </div>
-
-
-    <div class="hollyhood">
-      <a target="_blank" href="#" id="hollyhood">HollyHood.life</a>
-    </div>
-
-    <div class="juliemansfield">
-      <a target="_blank" href="#" id="juliemansfield">Julie Mansfield</a>
-    </div>
-
-  </div>
-</div>
-
-
-<button class="accordion">BIO</button>
-
-      <div class="panel">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <p class='biotext'>Jenèe is an inventor by nature. A recent graduate of Wyncode Academy, she is armed with the necessary tools and passion for learning
-                that are needed in today's every-changing technological industry. She is deeply interested in Robotics, Artificial Intelligence, and Virtual Reality.
-                Jenèe plans on continuing to harness and sharpen her coding super power, so that she can help create the new world of tomorrow!
-                <br>
-                In her spare time, Jenèe enjoys shooting pool, writing music, and travelling.
-              </p>
-            </div>
-
-          </div>
-
-
-        <div class="col-md-6 col-md-offset-6">
-          <div class='biopic'>
-            <img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/14502916_10154119110468918_6632611253511962199_n.jpg?oh=7ae97d5cc369e3f47646a5050ca4bbf7&oe=58F96771" id="bioedit" alt="">
-          </div>
-
-        </div>
-
+    <div class="row">
+      <div class="col-md-12 col-md-offset-2">
+        <ul id="devicons">
+          <li><i class="devicon-css3-plain-wordmark"></i></li>
+          <li><i class="devicon-html5-plain-wordmark"></i></li>
+          <li><i class="devicon-javascript-plain"></i></li>
+          <li><i class="devicon-ruby-plain-wordmark"></i></li>
+          <li><i class="devicon-jquery-plain-wordmark"></i></li>
+          <li><i class="devicon-rails-plain-wordmark"></i></li>
+          <li><i class="devicon-git-plain-wordmark"></i></li>
+          <li><i class="devicon-python-plain-wordmark"></i></li>
+          <li><i class="devicon-php-plain"></i></li>
+        </ul>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-12">
+        <p class="forever">Forever Expanding...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECENT PROJECTS -------------------------------->
+<button class="accordion">Recent Projects</button>
+<div class="panel">
+  <div class="container">
+    <div class="row" id="project-align">
+      <div class="col-md-4" id="spindiv">
+        <a href="#" class="me2">#Me2</a>
+      </div>
+
+      <div class="col-md-4" id="spindiv">
+        <a href="#" class="crc">Caribbean Regenerative Center</a>
+      </div>
+
+      <div class="col-md-4" id="spindiv">
+        <a href="#" class="develdev">DevelDev</a>
+      </div>
+
+      <!-- <div class="col-md-3">
+        <a href="#"></a></a>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- BIO ------------------------------------------------------>
+<button class="accordion">Bio</button>
+<div class="panel">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <%= image_tag 'jwassh2.png', class: 'bio-pic' %>
+      </div>
+
+      <div class="col-md-6">
+        <p class='bio-text'>Hi! My name is Jenee. I'm a Full Stack Web Developer living in Miami, Florida.</p>
+          <hr>
+        <p class='bio-text'>
+        I'm a recent graduate of Wyncode Academy. Before transitioning to web development, I was working as a waitress in a cocktail bar - that much is true!
+          Making the decision to learn how to code has been one of the best ones I've made thus far. I absolutely LOVE programming! I enjoy creating unique and user-friendly
+          websites and web apps. I am constantly learning new programming technologies and
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT  ----------------------------------------------------->
 <button class="accordion">CONTACT</button>
 <div class="panel" id="centercontact">
   <div class="hireme">
     <button type="button" id='hireme' class='btn btn-sucess btn-lg'>Hire Me!</button>
     </div>
-  <p class='contactname'>Jenèe Taylor Washington</p>
+  <p class='contactname'>Jenee Taylor Washington</p>
 
 
   <div class="contacticons">
@@ -106,9 +103,22 @@
     <a target="_blank" href='https://github.com/NeyNey305'><i class="fa fa-github" aria-hidden="true"></i></a>
     <a target="_blank" href='https://twitter.com/Jenee305'><i class="fa fa-twitter" aria-hidden="true"></i></a>
   </div>
-
 </div>
 
+<!-- FOOTER  ------------------------------------------------->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <p>&copy; 2017 Jenee Taylor Development</p>
+          <p>Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT FOR ACCORDION MENU ----------------------------->
 
 <script type="text/javascript">
 var acc = document.getElementsByClassName("accordion");
