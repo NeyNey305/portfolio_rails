@@ -1,0 +1,25 @@
+<%= simple_form_for Contact.new do |f| %>
+  <%= f.error_notification %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+
+
+      <div class="form-inputs">
+        <%= f.input :first_name, label: false, placeholder: 'First Name' %>
+        <%= f.input :last_name, label: false, placeholder: 'Last Name' %>
+        <%= f.input :email, label: false, placeholder: 'Email (you@example.com)' %>
+        <%= f.input :phone_number, label: false, placeholder: 'Phone Number (xxx) xxx-xxxx' %>
+        <%= f.input :message, label: false, placeholder: 'Please type your message here...' %>
+        <%= f.button :submit, "Submit", class: 'btn btn-success' %>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<% end %>

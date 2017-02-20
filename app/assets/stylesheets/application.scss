@@ -3,7 +3,7 @@
 
 
 .fa-heart {
-  color: #ca80f2;
+  color: red;
 }
 /////////////////////////////// ACCORDION MENU////////////////////////////
 button.accordion {
@@ -24,7 +24,7 @@ button.accordion {
 
 button.accordion.active {
   background-color: black;
-  color: #dbc81e;
+  color: #e8d768;
 }
 
 button.accordion:hover {
@@ -35,20 +35,19 @@ button.accordion:hover {
 div.panel {
     padding: 0;
     background-color: black;
-    display: none;
-    margin: 0;
-    border-radius: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: 0.6 ease;
-    transition-timing-function: ease;
-    // opacity: 0;
+    border-radius: 0;
+    transition: 0.6s ease-in-out;
+    margin: 0;
+    opacity: 0;
 }
 
 div.panel.show {
     opacity: 1;
     max-height: 1050px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     margin: 0;
 }
 
@@ -66,7 +65,7 @@ div.panel.show {
 
 .jumbotron {
   background-image: url('jenee.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
   margin: 0;
@@ -86,6 +85,10 @@ div.panel.show {
   letter-spacing: 2.5em;
   text-align: center;
   margin-left: -25px;
+}
+
+#icons-align {
+  text-align: center;
 }
 
 .forever {
@@ -146,6 +149,7 @@ div.panel.show {
   font-family: 'Kaushan Script', cursive;
   font-size: 30px;
   color: #cc3bce;
+  padding-top: 1.5em;
 }
 
 .me2:hover {
@@ -154,14 +158,15 @@ div.panel.show {
   -webkit-stroke-width: 5.3px;
       -webkit-stroke-color: #FFFFFF;
       -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #70a808;
+      text-shadow: 1px 0px 20px #adadad;
 }
 
 
 .crc {
   font-family: 'Cinzel', serif;
   font-size: 20px;
-  color: #a7c6aa;
+  color: #A3BA98;
+  padding-top: 1.5em;
 }
 
 .crc:hover {
@@ -170,13 +175,14 @@ div.panel.show {
   -webkit-stroke-width: 5.3px;
       -webkit-stroke-color: #FFFFFF;
       -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #70a808;
+      text-shadow: 1px 0px 20px #adadad;
 }
 
 .develdev {
   color: #8e1904;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+  padding-top: 1.5em;
 }
 
 .develdev:hover {
@@ -185,7 +191,7 @@ div.panel.show {
   -webkit-stroke-width: 5.3px;
       -webkit-stroke-color: #FFFFFF;
       -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px #70a808;
+      text-shadow: 1px 0px 20px #adadad;
 }
 
 #project-align {
@@ -224,39 +230,57 @@ div.panel.show {
 }
 
 ////////////////////////////////// CONTACT /////////////////////////////////////////////
-#centercontact {
-  // text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  margin-top: -100px;
+
+
+#contact-text {
+  padding-bottom: 1.5em;
+  padding-left: 9em;
+  padding-top: 4em;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.contactname {
+#contact-intro {
   text-align: center;
-  font-size: 40px;
-  color: #333;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-.hireme {
-  padding-bottom: 1em;
+#contact-intro-2 {
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-#hireme {
-  background-color: #ed8925;
-  width: 20em;
+.form-inputs {
+  width: 25em;
 }
 
-.contacticons {
-  // float: right;
-  letter-spacing: 1em;
+.contact-pic {
+  height: 250px;
+  width: auto;
+}
+
+#contact-response {
   padding-top: 1em;
-  padding-left: 1em;
-  margin-bottom: -40px;
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  padding-left: 3em;
+}
+
+#miami {
   text-align: center;
+  padding-top: 2.5em;
+}
+
+.made-in-miami {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 18px;
+  padding-top: 1.2em;
+}
+
+.contact-icons {
+  letter-spacing: 0.2em;
+  display: inline-block;
+  font-size: 3em;
 }
 
 #email {
@@ -306,38 +330,55 @@ div.panel.show {
   opacity: 1;
 }
 
+.btn-success {
+  width: 25em;
+}
+
+.copyright-info {
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 5em;
+  text-align: center;
+}
+
 ////////////////////////////// FOOTER /////////////////////////////////
 
 footer {
   background-color: black;
   text-align: center;
   width: 100%;
-  height: 200px;
+  // height: 200px;
+  // position: fixed;
 
 }
 
 
-/* Custom, iPhone Retina */
-    @media only screen and (min-width : 320px) {
 
-    }
+////////////////////////// MEDIA QUERIES /////////////////////////////////////
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
 
     /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
+@media only screen and (min-width : 480px) {
 
-    }
+}
 
     /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-
-    }
+@media only screen and (min-width : 768px) {
+  // h1 {
+  //   line-height: 2em;
+  // }
+}
 
     /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+@media only screen and (min-width : 992px) {
 
-    }
+}
 
     /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 1200px) {
 
-    }
+}

@@ -3,9 +3,8 @@
   <head>
     <title>Jenèe Taylor</title>
     <%= csrf_meta_tags %>
+
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-
-
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,9 +18,12 @@
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+
   </head>
 
   <body>
     <%= yield %>
+    <!-- <p id="notice"><%= flash[:notice] %></p> -->
   </body>
 </html>

@@ -17,7 +17,7 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-12 col-md-offset-2">
+      <div class="col-md-12" id="icons-align">
         <ul id="devicons">
           <li><i class="devicon-css3-plain-wordmark"></i></li>
           <li><i class="devicon-html5-plain-wordmark"></i></li>
@@ -89,46 +89,47 @@
 
 <!-- CONTACT  ----------------------------------------------------->
 <button class="accordion">CONTACT</button>
-<div class="panel" id="centercontact">
-  <div class="hireme">
-    <button type="button" id='hireme' class='btn btn-sucess btn-lg'>Hire Me!</button>
+  <div class="panel">
+    <div class="container">
+
+      <h4 id="contact-intro">I would love to help you with your next project!</h4>
+      <p id="contact-intro-2">Please feel free to contact me anytime for estimates.</p>
+      <div class="row">
+        <div class="col-md-6" id="contact-text">
+            <%= render 'contacts/form' %>
+            <p id="contact-response">I will respond to your email within 24-48 hours.</p>
+        </div>
+
+
+      <div class="col-md-6" id="miami" >
+        <%= image_tag 'full_bloom.png', class: 'contact-pic' %>
+
+        <div class="contact-icons">
+          <p class='made-in-miami'>Made in Miami with <i class="fa fa-heart" aria-hidden="true"></i> </p>
+          <a href="tel:305-305-6306" id="phone"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <a href="mailto:jenee@jeneetaylor.co" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <a target="_blank" href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a target="_blank" href='https://github.com/NeyNey305'><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a target="_blank" href='https://twitter.com/Jenee305'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
     </div>
-  <p class='contactname'>Jenee Taylor Washington</p>
-
-
-  <div class="contacticons">
-    <a href="tel:305-305-6306" id="phone"><i class="fa fa-phone" aria-hidden="true"></i></a>
-    <a href="mailto:jeneewashington@icloud.com" id="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-    <a target="_blank" href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <a target="_blank" href='https://github.com/NeyNey305'><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a target="_blank" href='https://twitter.com/Jenee305'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <p class='copyright-info'>&copy; 2017 Jenee Taylor Development</p>
   </div>
 </div>
 
-<!-- FOOTER  ------------------------------------------------->
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-          <p>&copy; 2017 Jenee Taylor Development</p>
-          <p>Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- JAVASCRIPT FOR ACCORDION MENU ----------------------------->
 
 <script type="text/javascript">
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function(){
-    this.classList.toggle("active");
-    this.nextElementSibling.classList.toggle("show");
+  for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("show");
+    }
   }
-}
 
 </script>
